@@ -1,0 +1,28 @@
+title: "This is the title"
+author: "Tony Liang"
+institute: "University of British Columbia"
+date: "2024"
+date-format: long
+bibliography: references.bib
+engine: knitr
+format:
+  revealjs:
+    slide-number: true
+    hash-one-based-index: true
+    history: false
+    footnotes-hover:  true
+    embed-resources: true
+    width: 1600
+    height: 900
+    mouse-wheel: false
+    scrollable: false
+    code-overflow: wrap
+    hash-type: number
+    link-external-icon: true
+    link-external-newwindow: true
+    lang: en-CA
+    theme:
+      - assets/custom_styles.scss
+    output-file: index.html # naming other stuff, gh complains
+    transition: fade
+    transition-speed: default # or fast or slow

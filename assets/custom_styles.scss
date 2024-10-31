@@ -1,0 +1,106 @@
+// Include theme-specific fonts
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital@0;1&display=swap');
+
+/*-- scss:defaults --*/
+// Override theme settings (see ../template/settings.scss)
+// Base settings for all themes that can optionally be
+// overridden by the super-theme
+
+
+// Background of the presentation
+$backgroundColor: #fcfbf9;
+
+// Primary/body text
+$mainFont: 'Jost', sans-serif;
+$mainFontSize: 36px;//30px;
+$mainColor: #333;
+
+// Vertical spacing between blocks of text
+$blockMargin: 20px;
+
+// Headings
+$headingMargin: 0 0 $blockMargin 0;
+$headingFont: 'Abhaya Libre', Impact, sans-serif;
+$headingColor: #006791;
+$headingLineHeight: 1.2;
+$headingLetterSpacing: normal;
+$headingTextTransform: none;
+$headingTextShadow: none;
+$headingFontWeight: normal;
+$heading1TextShadow: $headingTextShadow;
+
+$heading1Size: 3.00em;
+$heading2Size: 2.11em;
+$heading3Size: 1.55em;
+$heading4Size: 1.00em;
+
+$codeFont: monospace;
+
+// Links and actions
+$linkColor: #437597;
+$linkColorHover: darken( $linkColor, 20% );
+
+// Text selection
+$selectionBackgroundColor: #FF5E99;
+$selectionColor: #fff;
+
+// start using css here
+#title-slide > h1 {
+  color:  var($headingColor);
+}
+
+// This specifically for the highlight slide
+.highlight {
+  h1 {
+    text-align: center !important;
+    font-size: 4em !important;
+    color: #e98a15 !important;
+  }
+}
+
+.thanks {
+  h1 {
+    text-align: center !important;
+    font-size: 4em !important;
+    color: #006791 !important;
+  }
+}
+
+.primary {
+  color: #2c365e;  
+}
+
+.secondary {
+  color: #e98a15;
+}
+
+.tertiary {
+  color: #0a8754;
+}
+
+.quaternary {
+  color: #ff170d;
+}
+
+.stretch-protein {
+  width: 650px !important;
+}
+
+
+#title-slide .author {
+  color: black;
+}
+
+#title-slide .institute {
+  font-size: 1.5em;
+}
+
+
+#title-slide > .author:first-of-type {
+  margin-top: 320px;
+}
+
+// #title-slide {
+//   top: 0 !important;
+// }
